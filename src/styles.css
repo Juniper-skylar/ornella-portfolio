@@ -982,6 +982,7 @@ h6 {
 }
 
 
+
 /* ===== PROJECT CARDS ===== */
 .text-gradient {
   background: linear-gradient(90deg, #6a11cb, #2575fc);
@@ -1091,3 +1092,113 @@ h6 {
   color: #fff;
   text-decoration: none;
 }
+/* ===== PROJECTS SECTION ===== */
+.projects-section {
+  background-color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.projects-section .section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* ===== PROJECT CARD ===== */
+.project-card {
+  background: linear-gradient(145deg, #f8f3eb, #fdfcfb);
+  border-radius: 20px;
+  padding: 35px 25px;
+  text-align: center;
+  height: 100%;
+  border: 1px solid #e4d7c8;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease-in-out;
+  transform: translateY(0);
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(145deg, #fff9f5, #f7efe6);
+}
+
+.project-icon {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-icon {
+  transform: rotate(8deg) scale(1.1);
+}
+
+.project-card h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #252a34;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover h4 {
+  color: #845ec2;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  font-family: "Inter", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tech-badge {
+  background-color: #f0e9de;
+  color: #333;
+  border-radius: 12px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+  background-color: #845ec2;
+  color: #fff;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 992px) {
+  .project-card {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .project-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
+
+  .tech-badge {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
