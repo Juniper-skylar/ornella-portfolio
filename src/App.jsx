@@ -1,7 +1,6 @@
  import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import BackToTop from "./components/BackToTop";
-import Projects from "./components/Projects";
 import aboutImage from "./assets/imagen.jpeg";
 import "./styles.css";
 
@@ -33,6 +32,7 @@ const App = () => {
   className="hero-section d-flex align-items-center justify-content-center text-center"
   style={{
     minHeight: "100vh",
+
     color: "#222",
     padding: "80px 20px",
     backgroundColor: "LavenderBlush",
@@ -157,7 +157,6 @@ const App = () => {
         </div>
       </section>
 
-
       {/* ===== PROJECTS SECTION ===== */}
 {/* ===== PROJECTS SECTION ===== */}
 <section id="projects" className="py-5" style={{ backgroundColor: "#f8f9fa" }}>
@@ -230,35 +229,6 @@ const App = () => {
                 </span>
               ))}
             </div>
-
-     {/* ===== SKILLS SECTION ===== */}
-<section id="skills" className="section-content skills-section">
-  <div className="container">
-    <h2 className="section-title">My Skills And Abilities</h2>
-    <div className="row justify-content-center mt-4">
-      {/* ===== Skill Cards ===== */}
-      {[
-  { name: "React JS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Vue JS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
-  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-  { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-  { name: "Node JS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { name: "Express", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-  { name: "Flutter", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
-  { name: "Tailwind CSS", logo: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
-  { name: "Bootstrap", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
-  { name: "PHP", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
-  { name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-  { name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-  { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-].map((skill) => (
-        <div key={skill.name} className="col-lg-2 col-md-3 col-6 mb-4 d-flex justify-content-center">
-          <div className="skill-card">
-            <img src={skill.logo} alt={skill.name} className="skill-logo mb-2" />
-            <p>{skill.name}</p>
-
           </div>
         </div>
       ))}
@@ -267,22 +237,10 @@ const App = () => {
 </section>
 
 
-
       {/* ===== CONTACT SECTION ===== */}
       <section id="contact" className="section-content contact-section" style={{ backgroundColor:"LavenderBlush"}}>
         <div className="container text-center">
           <h2 className="section-title text-gradient">Contact Me</h2>
-=======
-<Projects />
-
-      {/* ===== CONTACT SECTION ===== */}
-<section id="contact" className="section-content contact-section" style={{ backgroundColor: "LavenderBlush"}}>
-  <div className="container text-center">
-    <h2 className="section-title">Contact Me</h2>
-    <p className="contact-intro mt-3">
-      I’d love to connect with you! You can reach me through the following platforms:
-    </p>
-
 
           <div className="d-flex flex-wrap justify-content-center align-items-center mt-4 gap-4">
             {/* Instagram */}
@@ -327,16 +285,12 @@ const App = () => {
 
       {/* ===== FOOTER ===== */}
       <footer className="footer">
-
         <p>
           © {new Date().getFullYear()}{" "}
           
             Uwase Ornella — All Rights Reserved
           
         </p>
-
-        <p>© {new Date().getFullYear()} <a href="https://abimana-yves.netlify.app/" className="text-decoration-none text-white">Uwase Ornella — All Rights Reserved</a></p>
-
       </footer>
 
       <BackToTop />
