@@ -59,7 +59,7 @@ const App = () => {
 
       {/* GitHub Button */}
       <a
-        href="https://github.com"
+        href="https://github.com/Juniper-skylar"
         target="_blank"
         rel="noopener noreferrer"
         className="hero-btn github-btn"
@@ -259,7 +259,7 @@ const App = () => {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/250729598007"
+              href="https://wa.me/250794709394"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-icon"
@@ -268,7 +268,7 @@ const App = () => {
                 src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
                 alt="WhatsApp"
               />
-              <p>+250 729 598 007</p>
+              <p>+250 794 709 394</p>
             </a>
 
             {/* Email */}
